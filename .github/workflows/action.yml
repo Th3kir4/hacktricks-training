@@ -22,8 +22,8 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: us-east-1
-          role-to-assume: arn:aws:iam::498432337884:role/sts-lab-2-target
+          role-to-assume: arn:aws:iam::008988000283:role/sts-lab-2-target
           role-session-name: OIDCSession
  
-      - run: aws secretsmanager get-secret-value --secret-id "arn:aws:secretsmanager:us-east-1:498432337884:secret:flag_sts_lab_2-x2jr6z"
+      - run: aws secretsmanager get-secret-value --secret-id flag_sts_lab_1
         shell: bash
